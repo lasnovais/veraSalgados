@@ -1,0 +1,112 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.3.913/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.3.913/styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/topo.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+</head>
+
+<body>
+
+    <script>
+
+
+        <div id="modalChamados" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <span>Nome de contato:</span>
+                        <br />
+                        <input id="txtNome" style="width: 100%" class="k-textbox" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span>E-mails para contato (separe com vírgula):</span>
+                        <br />
+                        <input id="txtEmails" style="width: 100%" class="k-textbox" />
+                    </div>
+                    <div class="col-sm-6">
+                        <span>Celulares com DDD para contato via SMS (separe com vírgula):</span>
+                        <br />
+                        <input id="txtCelulares" style="width: 100%" class="k-textbox" />
+                    </div>
+                </div>
+                <br />
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span>Departamento:</span>
+                        <br />
+                        <input id="dropListDepartamentoNovo" style="width: 100%" />
+                    </div>
+                    <div class="col-sm-6" id="divCategoriaNovo">
+                        <span>Categoria:</span>
+                        <br />
+                        <input id="dropListCategoriaNovo" style="width: 100%" />
+                    </div>
+                </div>
+                <br />
+                <div hidden class="row" id="divMotivoNovo">
+                    <div class="col-sm-12">
+                        <span>Motivo:</span>
+                        <br />
+                        <input id="dropListMotivoNovo" style="width: 100%" />
+                    </div>
+                </div>
+                <br />
+                <div hidden class="row" id="divDescricaoNovo">
+                    <div class="col-sm-12">
+                        <span>Descrição:</span>
+                        <br />
+                        <textarea rows="4" cols="200" id="txtDescricao" style="width: 100%" class="k-textbox"></textarea>
+                    </div>
+
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div id="divFiles">
+                            <input name="files" id="files" type="file" />
+                            <br />
+                        </div>
+                    </div>
+                    <div class="col-sm-4 text-right">
+                        <button id="btnPedirPedidos" hidden><span class="glyphicon glyphicon-chevron-right"></span>&ensp;Próximo</button>
+                        <button id="btnCancelarNovo" hidden><span class="glyphicon glyphicon-log-out"></span>&ensp;Cancelar</button>
+                    </div>
+                </div>
+            </div>
+            <div />
+        </div>
+        Modal.criaModalappv1('#modalChamados', template_modal_chamados);
+
+
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://kendo.cdn.telerik.com/2017.3.913/js/kendo.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+
+
+    <!--Load the required Kendo Vue package(s)-->
+    <script src="https://unpkg.com/@progress/kendo-dateinputs-vue-wrapper/dist/cdn/kendo-dateinputs-vue-wrapper.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+
+
+</body>
+
+</html>
